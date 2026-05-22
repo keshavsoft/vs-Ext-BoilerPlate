@@ -1,1 +1,0 @@
-DELETE http://localhost:3000/Api/ItemsTable/Delete?ParentPk=2
