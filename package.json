@@ -3,7 +3,7 @@
   "displayName": "KeshavSoft Boilerplate",
   "publisher": "KeshavSoft",
   "description": "BoilerPlate for many needs",
-  "version": "1.1.1",
+  "version": "1.2.2",
   "type": "module",
   "capabilities": {
     "untrustedWorkspaces": {
@@ -27,180 +27,18 @@
       {
         "command": "extension.initJs",
         "title": "Initiate Node API"
-      },
-      {
-        "command": "extension.initJsFromEnv",
-        "title": "Initiate Node API from Env file"
-      },
-      {
-        "command": "extension.expressBoilerPlate",
-        "title": "Scaffold Express Boilerplate"
-      },
-      {
-        "command": "extension.tallyBoilerPlate",
-        "title": "Scaffold Express Boilerplate for tally integration"
-      },
-      {
-        "command": "extension.createFullEndpoint",
-        "title": "CreateFullEndpoint"
-      },
-      {
-        "command": "extension.forAppJs",
-        "title": "Fix App Js"
-      },
-      {
-        "command": "extension.fixAppJs",
-        "title": "Fix"
-      },
-      {
-        "command": "extension.ifEmptyAppJs",
-        "title": "IfEmpty"
-      },
-      {
-        "command": "extension.editor.title.appjs.startEndpoint",
-        "title": "StartEndpoint"
-      },
-      {
-        "command": "extension.editor.title.addSubRoute",
-        "title": "AddSubRoute"
-      },
-      {
-        "command": "extension.editor.title.addTableName",
-        "title": "AddTableName"
-      },
-      {
-        "command": "extension.editor.title.addEndPoint",
-        "title": "AddEndPoint"
-      },
-      {
-        "command": "extension.editor.title.routes.writeEndPoint",
-        "title": "WriteEndPoint"
-      },
-      {
-        "command": "extension.editor.title.endpoints.showAll",
-        "title": "showAll"
-      },
-      {
-        "command": "extension.editor.title.endpoints.insert",
-        "title": "insert"
-      },
-      {
-        "command": "extension.editor.title.endpoints.delete",
-        "title": "delete"
-      },
-      {
-        "command": "extension.editor.title.endpoints.find",
-        "title": "find"
-      },
-      {
-        "command": "extension.editor.title.endpoints.filter",
-        "title": "filter"
-      },
-      {
-        "command": "extension.editor.title.endpoints.alter",
-        "title": "alter"
-      },
-      {
-        "command": "extension.editor.title.endpoints.get",
-        "title": "get"
-      },
-      {
-        "command": "extension.wizard.appjs",
-        "title": "wizard"
       }
     ],
     "menus": {
       "explorer/context": [
         {
-          "command": "extension.expressBoilerPlate",
-          "when": "explorerResourceIsFolder",
-          "group": "navigation@0"
-        },
-        {
-          "command": "extension.tallyBoilerPlate",
-          "when": "explorerResourceIsFolder",
-          "group": "navigation@0"
-        },
-        {
           "command": "extension.initJs",
           "when": "explorerResourceIsFolder",
           "group": "navigation@1"
-        },
-        {
-          "command": "extension.initJsFromEnv",
-          "when": "explorerResourceIsFolder",
-          "group": "navigation@2"
-        },
-        {
-          "command": "extension.createFullEndpoint",
-          "when": "resourceExtname == .js",
-          "group": "navigation@5"
         }
       ],
-      "editor/context": [
-        {
-          "command": "extension.forAppJs",
-          "when": "resourceExtname == .js",
-          "group": "navigation@1"
-        }
-      ],
-      "editor/title": [
-        {
-          "command": "extension.fixAppJs",
-          "when": "resourceFilename == app.js",
-          "group": "navigation@1"
-        },
-        {
-          "command": "extension.ifEmptyAppJs",
-          "when": "resourceFilename == app.js",
-          "group": "navigation@1"
-        },
-        {
-          "command": "extension.editor.title.addSubRoute",
-          "when": "resourceFilename == routes.js",
-          "group": "navigation@3"
-        },
-        {
-          "command": "extension.editor.title.addTableName",
-          "when": "resourceFilename == routes.js",
-          "group": "navigation@3"
-        },
-        {
-          "command": "extension.editor.title.addEndPoint",
-          "when": "resourceFilename == routes.js",
-          "group": "navigation@4"
-        },
-        {
-          "command": "extension.editor.title.endpoints.insert",
-          "when": "resourceFilename == end-points.js",
-          "group": "navigation@7"
-        },
-        {
-          "command": "extension.editor.title.endpoints.delete",
-          "when": "resourceFilename == end-points.js",
-          "group": "navigation@8"
-        },
-        {
-          "command": "extension.editor.title.endpoints.alter",
-          "when": "resourceFilename == end-points.js",
-          "group": "navigation@10"
-        },
-        {
-          "command": "extension.editor.title.endpoints.get",
-          "when": "resourceFilename == end-points.js",
-          "group": "navigation@7"
-        },
-        {
-          "command": "extension.editor.title.appjs.startEndpoint",
-          "when": "resourceFilename == app.js",
-          "group": "navigation@2"
-        },
-        {
-          "command": "extension.wizard.appjs",
-          "when": "resourceFilename == app.js",
-          "group": "navigation@3"
-        }
-      ]
+      "editor/context": [],
+      "editor/title": []
     }
   },
   "scripts": {
