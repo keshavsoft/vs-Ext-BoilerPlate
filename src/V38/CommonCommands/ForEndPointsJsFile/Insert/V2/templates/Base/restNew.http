@@ -1,0 +1,8 @@
+POST http://localhost:3016/Ledgers/V1/Insert
+Content-Type: application/json
+
+{
+  "LedgerName": "Zurich Kotak General Insurance11",
+    "LedgerParentName": "Insurance Premium",
+    "LedgerType": "Ledger"
+}
