@@ -1,0 +1,8 @@
+{
+    "Tables": [
+        "BillsTable",
+        "ItemsTable",
+        "LedgerNames",
+        "StockItems"
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "tableName": "LedgerNames",
+    "columns": [
+        {
+            "field": "LedgerName",
+            "title": "LedgerName",
+            "unique": true,
+            "type": "text",
+            "isInput": true,
+            "isAutoFocus": true,
+            "defaultvalue": "KeshavSoft",
+            "isConsider": true
+        },
+        {
+            "field": "LedgerParentName",
+            "title": "LedgerParentName",
+            "type": "text",
+            "isInput": true,
+            "isConsider": true
+        },
+        {
+            "field": "LedgerType",
+            "title": "LedgerType",
+            "type": "text",
+            "isInput": true,
+            "isConsider": true
+        },
+        {
+            "field": "pk",
+            "title": "pk",
+            "primary": true
+        }
+    ],
+    "data": [],
+    "Vertical": [],
+    "DataTableOptions": {
+        "Header": {
+            "autoFocus": "LedgerName"
+        }
+    },
+    "NonSecured": {
+        "SubRoutes": [
+            "ShowAll",
+            "Insert",
+            "Pipe"
+        ]
+    },
+    "PrimarykeyTableNames": [],
+    "PrimarykeyTables": []
+}

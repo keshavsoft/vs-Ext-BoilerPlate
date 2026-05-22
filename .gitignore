@@ -1,0 +1,8 @@
+node_modules
+.vscode-test/
+*.vsix
+
+!.env
+
+!src/CommonTemplates/Base/.env
+!src/CommonTemplates/BaseWithVersions/V2/.env

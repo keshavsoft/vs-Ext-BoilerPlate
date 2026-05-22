@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EndPointGen VS Code Extension</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1> EndPointGen VS Code Extension </h1>
+
+<div class="card">
+
+<h2>Overview</h2>
+
+<p>
+<b>EndPointGen</b> is a Visual Studio Code extension developed by <b>KeshavSoft</b> 
+focused on AI-assisted server-side development using Node.js and Express.
+</p>
+
+<div class="badge">Version 1.8.1</div>
+<div class="badge">VS Code ^1.109.0</div>
+<div class="badge">ES Modules</div>
+<div class="badge">Untrusted Workspace Supported</div>
+
+</div>
+
+<div class="card">
+
+<h2>Features</h2>
+
+<div class="grid">
+
+<div class="feature"> Generate Express.js API instantly</div>
+
+<div class="feature"> Create endpoints in app.js automatically</div>
+
+<div class="feature"> Add modular sub-routes in routes.js</div>
+
+<div class="feature"> Inject endpoint logic into .js files</div>
+
+<div class="feature"> Right-click Explorer integration</div>
+
+<div class="feature"> Clean modular architecture</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Commands</h2>
+
+<table>
+
+<tr>
+<th>Command</th>
+<th>Title</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>extension.initJs</td>
+<td>Initiate Node API</td>
+<td>Creates base Express server</td>
+</tr>
+
+<tr>
+<td>extension.createEndpoint</td>
+<td>CreateEndpoint</td>
+<td>Creates GET / POST route in app.js</td>
+</tr>
+
+<tr>
+<td>extension.addSubRoute</td>
+<td>AddSubRoute</td>
+<td>Links router module in routes.js</td>
+</tr>
+
+<tr>
+<td>extension.addEndPoint</td>
+<td>AddEndPoint</td>
+<td>Adds endpoint logic to js file</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>Context Menu Integration</h2>
+
+<img src="images/context-menu.png">
+
+<ul>
+
+<li>Folders → Initiate Node API</li>
+
+<li>app.js → CreateEndpoint</li>
+
+<li>routes.js → AddSubRoute</li>
+
+<li>.js files → AddEndPoint</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Fix App.js</h2>
+
+<p>
+Ensures app.js contains required Express configuration and route registrations.
+</p>
+
+<ul>
+
+<li>Fix missing middleware</li>
+
+<li>Connect routes automatically</li>
+
+<li>Repair broken structure</li>
+
+<li>Standardize project setup</li>
+
+</ul>
+
+<img src="images/fix-appjs.png">
+
+</div>
+
+<div class="card">
+
+<h2>Editor Title Bar Actions</h2>
+
+<p>
+Quick access buttons in VS Code editor top-right corner.
+</p>
+
+<img src="./images/FixButton.png">
+
+<div class="grid">
+
+<div class="feature">
+
+<h3>Fix</h3>
+
+<ul>
+
+<li>Fix app.js structure</li>
+
+<li>Add middleware</li>
+
+<li>Connect routes</li>
+
+</ul>
+
+</div>
+
+<div class="feature">
+
+<h3>AddSubRoute</h3>
+
+<ul>
+
+<li>Import router</li>
+
+<li>Register router</li>
+
+<li>Maintain modular structure</li>
+
+</ul>
+
+</div>
+
+<div class="feature">
+
+<h3>AddEndPoint</h3>
+
+<ul>
+
+<li>Create GET endpoint</li>
+
+<li>Create POST endpoint</li>
+
+<li>Auto register route</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h2>New Feature – Editor Title Bar Actions (Top Right Buttons)</h2>
+
+<p>
+EndPointGen also provides quick access buttons in the VS Code editor title bar (top-right corner).
+These buttons allow you to create and manage endpoints without right-clicking in Explorer.
+</p>
+
+<img src="images/top-buttons.png" alt="VS Code Top Right Buttons">
+
+<h3>Available Title Bar Commands</h3>
+
+<div class="grid">
+
+<div class="feature">
+
+<h3>Fix (Button)</h3>
+
+<p>
+Ensures <b>app.js</b> contains required Express configuration and route registrations.
+</p>
+
+<h4>Use when</h4>
+
+<ul>
+<li>middleware missing</li>
+<li>routes not connected</li>
+<li>structure broken</li>
+<li>project copied from another repo</li>
+<li>app.js needs standard structure</li>
+</ul>
+
+<h4>How to use</h4>
+
+<ul>
+<li>Open <b>app.js</b></li>
+<li>Click <b>Fix</b> button (top right)</li>
+</ul>
+
+</div>
+
+
+<div class="feature">
+
+<h3>AddSubRoute</h3>
+
+<p>
+Registers a modular router inside <b>routes.js</b>.
+</p>
+
+<h4>Automatically</h4>
+
+<ul>
+<li>imports router</li>
+<li>links router path</li>
+<li>keeps modular architecture</li>
+</ul>
+
+<h4>How to use</h4>
+
+<ul>
+<li>Open <b>routes.js</b></li>
+<li>Click <b>AddSubRoute</b> button (top right)</li>
+</ul>
+
+</div>
+
+
+<div class="feature">
+
+<h3>AddEndPoint</h3>
+
+<p>
+Creates a new Express route entry inside SubRoute.
+</p>
+
+<h4>Supports</h4>
+
+<ul>
+<li>GET endpoint</li>
+<li>POST endpoint</li>
+<li>automatic route registration</li>
+</ul>
+
+<h4>How to use</h4>
+
+<ul>
+<li>Open <b>app.js</b></li>
+<li>Click <b>AddEndPoint</b> button (top right)</li>
+<li>Endpoint will be added automatically</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Benefits</h2>
+
+<ul>
+
+<li> Faster development</li>
+
+<li> Standard project structure</li>
+
+<li> Less manual coding</li>
+
+<li> Modular architecture</li>
+
+<li> Clean Express setup</li>
+
+<li> Works directly inside VS Code</li>
+
+</ul>
+
+</div>
+
+<footer>
+
+Made with ❤ by KeshavSoft
+
+</footer>
+
+</div>
+
+</body>
+
+</html>

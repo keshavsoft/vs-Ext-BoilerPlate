@@ -1,0 +1,227 @@
+{
+  "name": "vs-Ext-BoilerPlate",
+  "displayName": "vs-Ext-BoilerPlate",
+  "publisher": "KeshavSoft",
+  "description": "BoilerPlate for many needs",
+  "version": "1.1.1",
+  "type": "module",
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    }
+  },
+  "engines": {
+    "vscode": "^1.109.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keshavsoft/keshavai.git"
+  },
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.initJs",
+        "title": "Initiate Node API"
+      },
+      {
+        "command": "extension.initJsFromEnv",
+        "title": "Initiate Node API from Env file"
+      },
+      {
+        "command": "extension.expressBoilerPlate",
+        "title": "Scaffold Express Boilerplate"
+      },
+      {
+        "command": "extension.tallyBoilerPlate",
+        "title": "Scaffold Express Boilerplate for tally integration"
+      },
+      {
+        "command": "extension.createFullEndpoint",
+        "title": "CreateFullEndpoint"
+      },
+      {
+        "command": "extension.forAppJs",
+        "title": "Fix App Js"
+      },
+      {
+        "command": "extension.fixAppJs",
+        "title": "Fix"
+      },
+      {
+        "command": "extension.ifEmptyAppJs",
+        "title": "IfEmpty"
+      },
+      {
+        "command": "extension.editor.title.appjs.startEndpoint",
+        "title": "StartEndpoint"
+      },
+      {
+        "command": "extension.editor.title.addSubRoute",
+        "title": "AddSubRoute"
+      },
+      {
+        "command": "extension.editor.title.addTableName",
+        "title": "AddTableName"
+      },
+      {
+        "command": "extension.editor.title.addEndPoint",
+        "title": "AddEndPoint"
+      },
+      {
+        "command": "extension.editor.title.routes.writeEndPoint",
+        "title": "WriteEndPoint"
+      },
+      {
+        "command": "extension.editor.title.endpoints.showAll",
+        "title": "showAll"
+      },
+      {
+        "command": "extension.editor.title.endpoints.insert",
+        "title": "insert"
+      },
+      {
+        "command": "extension.editor.title.endpoints.delete",
+        "title": "delete"
+      },
+      {
+        "command": "extension.editor.title.endpoints.find",
+        "title": "find"
+      },
+      {
+        "command": "extension.editor.title.endpoints.filter",
+        "title": "filter"
+      },
+      {
+        "command": "extension.editor.title.endpoints.alter",
+        "title": "alter"
+      },
+      {
+        "command": "extension.editor.title.endpoints.get",
+        "title": "get"
+      },
+      {
+        "command": "extension.wizard.appjs",
+        "title": "wizard"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "extension.expressBoilerPlate",
+          "when": "explorerResourceIsFolder",
+          "group": "navigation@0"
+        },
+        {
+          "command": "extension.tallyBoilerPlate",
+          "when": "explorerResourceIsFolder",
+          "group": "navigation@0"
+        },
+        {
+          "command": "extension.initJs",
+          "when": "explorerResourceIsFolder",
+          "group": "navigation@1"
+        },
+        {
+          "command": "extension.initJsFromEnv",
+          "when": "explorerResourceIsFolder",
+          "group": "navigation@2"
+        },
+        {
+          "command": "extension.createFullEndpoint",
+          "when": "resourceExtname == .js",
+          "group": "navigation@5"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "extension.forAppJs",
+          "when": "resourceExtname == .js",
+          "group": "navigation@1"
+        }
+      ],
+      "editor/title": [
+        {
+          "command": "extension.fixAppJs",
+          "when": "resourceFilename == app.js",
+          "group": "navigation@1"
+        },
+        {
+          "command": "extension.ifEmptyAppJs",
+          "when": "resourceFilename == app.js",
+          "group": "navigation@1"
+        },
+        {
+          "command": "extension.editor.title.addSubRoute",
+          "when": "resourceFilename == routes.js",
+          "group": "navigation@3"
+        },
+        {
+          "command": "extension.editor.title.addTableName",
+          "when": "resourceFilename == routes.js",
+          "group": "navigation@3"
+        },
+        {
+          "command": "extension.editor.title.addEndPoint",
+          "when": "resourceFilename == routes.js",
+          "group": "navigation@4"
+        },
+        {
+          "command": "extension.editor.title.endpoints.insert",
+          "when": "resourceFilename == end-points.js",
+          "group": "navigation@7"
+        },
+        {
+          "command": "extension.editor.title.endpoints.delete",
+          "when": "resourceFilename == end-points.js",
+          "group": "navigation@8"
+        },
+        {
+          "command": "extension.editor.title.endpoints.alter",
+          "when": "resourceFilename == end-points.js",
+          "group": "navigation@10"
+        },
+        {
+          "command": "extension.editor.title.endpoints.get",
+          "when": "resourceFilename == end-points.js",
+          "group": "navigation@7"
+        },
+        {
+          "command": "extension.editor.title.appjs.startEndpoint",
+          "when": "resourceFilename == app.js",
+          "group": "navigation@2"
+        },
+        {
+          "command": "extension.wizard.appjs",
+          "when": "resourceFilename == app.js",
+          "group": "navigation@3"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.2",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@types/vscode": "^1.109.0",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2",
+    "autoprefixer": "^10.4.27",
+    "eslint": "^9.39.3",
+    "postcss": "^8.5.8"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.29.2",
+    "@keshavsoft/kschema-cli": "^1.12.14",
+    "@keshavsoft-org/express-todo": "^1.6.4"
+  }
+}

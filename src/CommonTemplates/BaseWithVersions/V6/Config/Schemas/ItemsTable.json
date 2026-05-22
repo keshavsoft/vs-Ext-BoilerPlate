@@ -1,0 +1,206 @@
+{
+    "tableName": "ItemsTable",
+    "columns": [
+        {
+            "field": "StockItemName",
+            "title": "StockItemName",
+            "unique": false,
+            "type": "text",
+            "isInput": false,
+            "isAutoFocus": true,
+            "WidthOptions": {
+                "inPx": 300
+            },
+            "isDataList": true,
+            "dataListId": "StockItems",
+            "isConsider": true,
+            "showInUi": true
+        },
+        {
+            "field": "Rate",
+            "title": "Rate",
+            "unique": false,
+            "type": "number",
+            "isNumber": true,
+            "ShowTotal": false,
+            "footerFormatter": "",
+            "showRupee": true,
+            "align": "right",
+            "WidthOptions": {
+                "inPx": 250
+            },
+            "isConsider": true,
+            "showInUi": true
+        },
+        {
+            "field": "Qty",
+            "title": "Qty",
+            "unique": false,
+            "type": "number",
+            "isNumber": true,
+            "ShowTotal": true,
+            "footerFormatter": "TotalFormatter",
+            "showRupee": false,
+            "WidthOptions": {
+                "inPx": 200
+            },
+            "isConsider": true,
+            "showInUi": true
+        },
+        {
+            "field": "Amount",
+            "title": "Amount",
+            "unique": false,
+            "type": "number",
+            "isNumber": true,
+            "ShowTotal": true,
+            "footerFormatter": "TotalFormatter",
+            "enterCal": "Rate*Qty",
+            "showRupee": true,
+            "align": "right",
+            "WidthOptions": {
+                "inPx": 250
+            },
+            "isConsider": true,
+            "showInUi": false
+        },
+        {
+            "field": "TaxPer",
+            "title": "TaxPer",
+            "unique": false,
+            "type": "number",
+            "isNumber": true,
+            "defaultvalue": 18,
+            "isConsider": true,
+            "showInUi": true
+        },
+        {
+            "field": "Uom",
+            "title": "Uom",
+            "unique": false,
+            "type": "number",
+            "isNumber": true,
+            "defaultvalue": 18,
+            "isConsider": true,
+            "showInUi": true
+        },
+        {
+            "field": "ParentPk",
+            "title": "ParentPk",
+            "unique": false,
+            "isConsider": true,
+            "showInUi": true
+        }
+    ],
+    "data": [
+        {
+            "ItemName": "Coke-Mts-5%",
+            "Rate": "100",
+            "Qty": "10",
+            "Amount": "2000",
+            "TaxPer": "5",
+            "Uom": "Mts",
+            "pk": 1,
+            "ParentPk": "1"
+        }
+    ],
+    "Vertical": [
+        {
+            "field": "StockItemName",
+            "title": "StockItemName",
+            "unique": false,
+            "type": "text",
+            "isInput": false,
+            "isAutoFocus": true,
+            "WidthOptions": {
+                "inPx": 300
+            },
+            "isDataList": true,
+            "dataListId": "StockItems"
+        },
+        {
+            "field": "Rate",
+            "title": "Rate",
+            "unique": false,
+            "type": "number",
+            "isNumber": true,
+            "ShowTotal": false,
+            "footerFormatter": "",
+            "showRupee": true,
+            "align": "right",
+            "WidthOptions": {
+                "inPx": 250
+            }
+        },
+        {
+            "field": "Qty",
+            "title": "Qty",
+            "unique": false,
+            "type": "number",
+            "isNumber": true,
+            "ShowTotal": true,
+            "footerFormatter": "TotalFormatter",
+            "showRupee": false,
+            "WidthOptions": {
+                "inPx": 200
+            }
+        },
+        {
+            "field": "Amount",
+            "title": "Amount",
+            "unique": false,
+            "type": "number",
+            "isNumber": true,
+            "ShowTotal": true,
+            "footerFormatter": "TotalFormatter",
+            "showRupee": true,
+            "align": "right",
+            "WidthOptions": {
+                "inPx": 250
+            }
+        },
+        {
+            "field": "TaxPer",
+            "title": "TaxPer",
+            "unique": false,
+            "type": "number",
+            "isNumber": true,
+            "defaultvalue": 18,
+            "isConsider": true,
+            "showInUi": true
+        },
+        {
+            "field": "Uom",
+            "title": "Uom",
+            "unique": false,
+            "type": "number",
+            "isNumber": true,
+            "defaultvalue": 18,
+            "isConsider": true,
+            "showInUi": true
+        }
+    ],
+    "DataTableOptions": {
+        "Header": {
+            "autoFocus": "StockItemName"
+        }
+    },
+    "NonSecured": {
+        "SubRoutes": [
+            "ShowAll",
+            "Insert",
+            "InsertAndReturnPk",
+            "InsertWithDefaults"
+        ]
+    },
+    "DependantTables": [
+        "StockItems"
+    ],
+    "ForeignkeyTables": [
+        "BillsTable"
+    ],
+    "PrimarykeyTableNames": [
+        "BillsTable"
+    ],
+    "PrimarykeyTables": []
+}

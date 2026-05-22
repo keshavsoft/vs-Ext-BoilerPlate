@@ -1,0 +1,160 @@
+{
+    "tableName": "BillsTable",
+    "columns": [
+        {
+            "field": "LedgerName",
+            "title": "LedgerName",
+            "type": "text",
+            "isInput": false,
+            "isAutoFocus": true,
+            "WidthOptions": {
+                "inPx": 200
+            },
+            "defaultvalue": "Keshav",
+            "isDataList": true,
+            "dataListId": "LedgerNames",
+            "isConsider": true
+        },
+        {
+            "field": "LedgerParentName",
+            "title": "LedgerParentName",
+            "type": "text",
+            "isInput": true,
+            "WidthOptions": {
+                "inPx": 200
+            },
+            "isConsider": true,
+            "showInUi": false
+        },
+        {
+            "field": "LedgerGST",
+            "title": "LedgerGST",
+            "type": "text",
+            "isInput": true,
+            "isAutoFocus": true,
+            "WidthOptions": {
+                "inPx": 200
+            },
+            "isConsider": true,
+            "showInUi": false
+        },
+        {
+            "field": "InvoiceNo",
+            "title": "InvoiceNo",
+            "type": "number",
+            "isInput": true,
+            "WidthOptions": {
+                "inPx": 200
+            },
+            "isConsider": true
+        },
+        {
+            "field": "InvoiceDate",
+            "title": "InvoiceDate",
+            "isDate": true,
+            "type": "date",
+            "WidthOptions": {
+                "inPx": 200
+            },
+            "defaultvalue": "today",
+            "isConsider": true
+        },
+        {
+            "field": "InvoiceStateCode",
+            "title": "InvoiceStateCode",
+            "defaultvalue": "37",
+            "isInput": true,
+            "WidthOptions": {
+                "inPx": 200
+            },
+            "isConsider": true,
+            "showInUi": false
+        }
+    ],
+    "data": [],
+    "Vertical": [
+        {
+            "field": "LedgerName",
+            "title": "LedgerName",
+            "type": "text",
+            "isInput": false,
+            "isAutoFocus": true,
+            "WidthOptions": {
+                "inPx": 200
+            },
+            "defaultvalue": "Keshav",
+            "isDataList": true,
+            "dataListId": "LedgerNames"
+        },
+        {
+            "field": "LedgerParentName",
+            "title": "LedgerParentName",
+            "type": "text",
+            "isInput": true,
+            "WidthOptions": {
+                "inPx": 200
+            }
+        },
+        {
+            "field": "LedgerGST",
+            "title": "LedgerGST",
+            "type": "text",
+            "isInput": true,
+            "isAutoFocus": true,
+            "WidthOptions": {
+                "inPx": 200
+            }
+        },
+        {
+            "field": "InvoiceNo",
+            "title": "InvoiceNo",
+            "type": "number",
+            "isInput": true,
+            "WidthOptions": {
+                "inPx": 200
+            }
+        },
+        {
+            "field": "InvoiceDate",
+            "title": "InvoiceDate",
+            "isDate": true,
+            "type": "date",
+            "WidthOptions": {
+                "inPx": 200
+            },
+            "defaultvalue": "today"
+        },
+        {
+            "field": "InvoiceStateCode",
+            "title": "InvoiceStateCode",
+            "defaultvalue": "37",
+            "isInput": true,
+            "WidthOptions": {
+                "inPx": 200
+            }
+        }
+    ],
+    "DataTableOptions": {
+        "Header": {
+            "autoFocus": "LedgerName"
+        }
+    },
+    "ForeignkeyTables": [
+        "ItemsTable"
+    ],
+    "DependantTables": [
+        "LedgerNames"
+    ],
+    "NonSecured": {
+        "SubRoutes": [
+            "ShowAll",
+            "Insert",
+            "Find",
+            "InsertAndReturnPk",
+            "FindWithForeignData",
+            "InsertToTally"
+        ]
+    },
+    "PrimarykeyTableNames": [],
+    "PrimarykeyTables": []
+}
